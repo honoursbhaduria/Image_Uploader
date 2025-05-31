@@ -3,9 +3,8 @@ from django.utils.translation import gettext_lazy as _
 
 # Create your models here.
 class Image(models.Model):
-    photo  = models.ImageField(_(""), upload_to="myimage", height_field=None, width_field=None, max_length=None)
+    photo  = models.ImageField(upload_to="myimage")
     date = models.DateTimeField( auto_now_add=True) 
     
-
 
 
